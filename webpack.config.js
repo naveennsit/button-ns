@@ -23,14 +23,13 @@ const fooConfig = Object.assign({}, config, {
     entry: "./src/index.js",
     output: {
         path: path.resolve("build"),
-        libraryTarget: "commonjs2",
+        libraryTarget: "umd",
         library: "header",
         globalObject: 'this', //  add this option
         filename: `index.js`
     },
     externals: {
-        'react': 'React',
-        'react-dom':'ReactDOM'
+        'react': 'react'
     }
 });
 

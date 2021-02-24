@@ -1,12 +1,11 @@
-import React from 'react';
+import HeaderHOC from "./Header";
 
-const Index = () => {
-    const [state,setState] = React.useState(0)
+export const Header = () => {
     return (
-        <div>
-            hello {state}
-        </div>
+        <HeaderHOC/>
     );
 };
 
-export default Index;
+export default Header;
+
+
